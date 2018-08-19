@@ -57,3 +57,8 @@ typings/
 # dotenv environment variables file
 .env
 
+# Exclude VSCode Editor meta information
+.code 
+
+# Exclude Jetbrains IDE meta information 
+.idea

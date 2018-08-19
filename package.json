@@ -2,16 +2,6 @@
     "name": "marmot-db",
     "description": "A high performance, shared memory, lock free, key-value store for Node.js",
     "version": "1.0.0",
-    "contributors": [
-        {
-            "name": "Nicola Del Gobbo",
-            "email": "nicoladelgobbo@gmail.com"
-        },
-        {
-            "name": "Mauro Doganieri",
-            "email": "mauro.doganieri@gmail.com"
-        }
-    ],
     "keywords": [
         "db",
         "database",
@@ -20,11 +10,15 @@
         "performance"
     ],
     "license": "Apache-2.0",
+    "author": {
+        "name": "Nicola Del Gobbo",
+        "email": "nicoladelgobbo@gmail.com"
+    },
     "scripts": {
         "test": "node node_modules/jasmine/bin/jasmine.js JASMINE_CONFIG_PATH=__tests__/jasmine.json"
     },
     "engines": {
-        "node": ">= 4.0.0"
+        "node": ">= 6.0.0"
     },
     "gypfile": true,
     "repository": {
@@ -35,16 +29,12 @@
         "url": "https://github.com/NickNaso/marmot-db/issues"
     },
     "homepage": "http://www.nacios.it/",
-    "dependencies": {},
-    "devDependencies": {},
-    "main": "./index.js",
-    "files": [
-        "LICENSE",
-        "README.md",
-        "CHANGELOG.md",
-        "binding.gyp",
-        "index.js",
-        "lib/",
-        "src/"
-    ]
+    "dependencies": {
+        "bindings": "^1.3.0",
+        "node-addon-api": "^1.4.0"
+    },
+    "devDependencies": {
+        "jasmine": "^3.2.0"
+    },
+    "main": "./index.js"
 }
